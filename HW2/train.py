@@ -5,6 +5,8 @@ from torchvision.trasforms import Compose, ToTensor, Normalize
 from torch.utils.data import DataLoader
 import torch.nn as nn
 from torch.optim import Adam
+# device setting
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # 하이퍼파라미터 설정
 batch_size = 100
@@ -93,8 +95,7 @@ class myVGG(nn.Module):
         x = self.out(x)
         return x
 
-# device setting
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
 # 모델 객체 생성(설계도, 하이퍼파라미터)
 model = myVGG(num_classes=num_classes).to(device)
 
