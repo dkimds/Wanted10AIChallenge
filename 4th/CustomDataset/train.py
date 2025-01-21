@@ -9,7 +9,7 @@ from networks.vgg import myVGG
 
 # Hparam 설정
 batch_size = 100 
-num_classes = 10
+num_classes = 15
 num_epochs = 10
 data_type = 'animal' # 'cifar'
 
