@@ -1,6 +1,6 @@
 # 패키지 임포트
 import torch
-import torchvision.datasets import CIFAR10
+from torchvision.datasets import CIFAR10
 from torchvision.trasforms import Compose, ToTensor, Normalize
 from torch.utils.data import DataLoader
 import torch.nn as nn
