@@ -8,7 +8,7 @@ from utils.getModules import load_dataloaders
 from networks.vgg import myVGG
 
 # Hparam 설정
-batch_size = 100 
+batch_size = 10
 num_classes = 15
 num_epochs = 10
 data_type = 'animal' # 'cifar'
