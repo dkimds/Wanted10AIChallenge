@@ -13,6 +13,20 @@
 
         },
         {
+            "name": "4_train",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}4th${pathSeparator}CustomDataset${pathSeparator}train.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}${pathSeparator}4th",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "justMyCode": false,
+            "args": [
+            ]
+        },
+        {
             "name": "3_train",
             "type": "debugpy",
             "request": "launch",
