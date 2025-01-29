@@ -2,6 +2,7 @@
     // https://github.com/bearpaw/pytorch-classification 의 코드에 디버그 모드로 아래 커맨드 실행
     // python cifar.py -a alexnet --epochs 164 --schedule 81 122 --gamma 0.1 --checkpoint checkpoints/cifar10/alexnet 
     // 코드 임의의 중간에 브레이크 포인트 찍어서 멈춰라.
+    "version": "0.2.0",
     "configurations": [
         {
             "name": "Python 디버거: 현재 파일",
@@ -28,6 +29,6 @@
                 "--gamma", "0.1",
                 "--checkpoint", "checkpoints/cifar10/alexnet"
             ]
-        },
+        }
     ]
 }
