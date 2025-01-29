@@ -1,0 +1,34 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 디버거: 현재 파일",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }, 
+        {
+            "name": "Python: training",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}cifar.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "CUDA_VISIBLE_DEVICES":"0"
+            }, // GPU 개수 안으로
+            "args": [
+                "-a", "alexnet",
+                "--epoch", "164",
+                "--schedule", "81", "122",
+                "--gamma", "0.1",
+                "--checkpoint", "checkpoints/cifar10/alexnet"
+            ]
+        },
+    ]
+}
